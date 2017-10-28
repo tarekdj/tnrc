@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tarekdj/tnrc.svg?branch=master)](https://travis-ci.org/tarekdj/tnrc)
+
 # tnrc
 Node library to get Tunisian companies public data from http://www.registre-commerce.tn
 
