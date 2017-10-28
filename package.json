@@ -1,6 +1,6 @@
 {
   "name": "tnrc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TNRCis  a library to get data from Tunisian companies registry \"Registre de commerce\". It uses public data available on http://www.registre-commerce.tn.",
   "main": "tnrc.js",
   "author": "",
