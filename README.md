@@ -13,7 +13,7 @@ const rc = require('tnrc');
 // Get the data
 const data = await rc.getDataByRC('REGISTRY NUMBER');
 // Output
-console.log(data)
+console.log(data);
 ```
 
 ## Notes
