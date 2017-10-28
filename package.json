@@ -1,0 +1,18 @@
+{
+  "name": "tnrc",
+  "version": "1.0.0",
+  "description": "TNRCis  a library to get data from Tunisian companies registry \"Registre de commerce\". It uses public data available on http://www.registre-commerce.tn.",
+  "main": "tnrc.js",
+  "author": "",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "cheerio-tableparser": "^1.0.1",
+    "puppeteer": "^0.11.0"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
