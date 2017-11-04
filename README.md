@@ -9,7 +9,7 @@ npm install tnrc
 ```
 ## Usage example
 ```javascript
-const { tnrc } = require('./tnrc');
+const { tnrc } = require('tnrc');
 
 // Geta data ny RC number
 const rc_serach = await tnrc.getDataByRC('REGISTRY NUMBER');
