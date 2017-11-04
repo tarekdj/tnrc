@@ -11,11 +11,11 @@ npm install tnrc
 ```javascript
 const { tnrc } = require('tnrc');
 
-// Geta data ny RC number
+// Get data ny RC number
 const rc_serach = await tnrc.getDataByRC('REGISTRY NUMBER');
 console.log(rc_serach);
 
-// Geta data ny RC number
+// Get data ny RC number
 const mf_serach = await tnrc.getDataByMF('MF NUMBER');
 console.log(mf_serach);
 ```
