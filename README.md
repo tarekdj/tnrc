@@ -9,15 +9,22 @@ npm install tnrc
 ```
 ## Usage example
 ```javascript
-const rc = require('tnrc');
-// Get the data
-const data = await rc.getDataByRC('REGISTRY NUMBER');
-// Output
-console.log(data);
+const { tnrc } = require('./tnrc');
+
+// Geta data ny RC number
+const rc_serach = await tnrc.getDataByRC('REGISTRY NUMBER');
+console.log(rc_serach);
+
+// Geta data ny RC number
+const mf_serach = await tnrc.getDataByMF('MF NUMBER');
+console.log(mf_serach);
 ```
 
 ## Notes
-This is a work in progress. Only request by RC number is supported for now.
+This is a work in progress. Following requests are supported:
+
+* Search by RC number.
+* Search by MF number.
 
 It relies on [GoogleChrome/puppeteer](https://github.com/GoogleChrome/puppeteer) (Headless Chrome Node API) to retrieve data.
 
