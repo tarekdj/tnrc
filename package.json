@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "babel src --out-dir dist"   
+    "build": "babel src --out-dir dist",
     "watch": "babel --watch src --out-dir dist"
   },
   "babel": {
