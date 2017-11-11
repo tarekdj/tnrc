@@ -2,7 +2,7 @@
   "name": "tnrc",
   "version": "1.0.2",
   "description": "TNRCis  a library to get data from Tunisian companies registry \"Registre de commerce\". It uses public data available on http://www.registre-commerce.tn.",
-  "main": "tnrc.js",
+  "main": "dist/tnrc.js",
   "author": "",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
@@ -19,11 +19,16 @@
     "build": "babel src --out-dir dist",
     "watch": "babel --watch src --out-dir dist"
   },
+  "keywords": [
+    "random",
+    "star wars"
+  ],
   "babel": {
     "presets": [
       "babel-preset-env"
     ],
     "plugins": [], 
     "ignore": []
-  }
+  },
+  "license": "WTFPL"
 }
