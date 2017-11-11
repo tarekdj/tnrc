@@ -10,9 +10,22 @@
     "puppeteer": "^0.11.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "jest": "^21.2.1"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "babel src --out-dir dist"   
+    "watch": "babel --watch src --out-dir dist"
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-env"
+    ],
+    "plugins": [], 
+    "ignore": [
+      "index.test.js"
+    ]
   }
 }
