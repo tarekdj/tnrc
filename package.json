@@ -24,8 +24,6 @@
       "babel-preset-env"
     ],
     "plugins": [], 
-    "ignore": [
-      "index.test.js"
-    ]
+    "ignore": []
   }
 }
