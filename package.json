@@ -12,10 +12,12 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "rimraf": "^2.6.2",
     "jest": "^21.2.1"
   },
   "scripts": {
     "test": "jest",
+    "prebuild": "rimraf dist",
     "build": "babel src --out-dir dist",
     "watch": "babel --watch src --out-dir dist"
   },
