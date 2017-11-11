@@ -1,18 +1,36 @@
 {
   "name": "tnrc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TNRCis  a library to get data from Tunisian companies registry \"Registre de commerce\". It uses public data available on http://www.registre-commerce.tn.",
-  "main": "tnrc.js",
-  "author": "",
+  "main": "dist/tnrc.js",
+  "author": "Tarek Djebali",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "cheerio-tableparser": "^1.0.1",
     "puppeteer": "^0.11.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "rimraf": "^2.6.2",
     "jest": "^21.2.1"
   },
   "scripts": {
-    "test": "jest"
-  }
+    "test": "jest",
+    "prebuild": "rimraf dist",
+    "build": "babel src --out-dir dist",
+    "watch": "babel --watch src --out-dir dist"
+  },
+  "keywords": [
+    "random",
+    "star wars"
+  ],
+  "babel": {
+    "presets": [
+      "babel-preset-env"
+    ],
+    "plugins": [], 
+    "ignore": []
+  },
+  "license": "MIT"
 }

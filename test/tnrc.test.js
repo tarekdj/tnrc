@@ -1,4 +1,4 @@
-const { tnrc } = require('./tnrc');
+const { tnrc } = require('../dist/tnrc');
 
 it('Get company name by RC number.', async () => {
   window.jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;
