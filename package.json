@@ -5,31 +5,29 @@
   "main": "dist/tnrc.js",
   "author": "Tarek Djebali",
   "dependencies": {
+    "@babel/polyfill": "^7.2.5",
     "cheerio": "^1.0.0-rc.2",
     "cheerio-tableparser": "^1.0.1",
-    "puppeteer": "^0.11.0"
+    "puppeteer": "^1.12.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
+    "@babel/cli": "^7.2.0",
+    "@babel/preset-env": "^7.3.0",
     "rimraf": "^2.6.2",
-    "jest": "^21.2.1"
+    "jest": "^24.1.0"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --detectOpenHandles --forceExit",
     "prebuild": "rimraf dist",
     "build": "babel src --out-dir dist",
     "watch": "babel --watch src --out-dir dist"
   },
-  "keywords": [
-    "random",
-    "star wars"
-  ],
+  "keywords": [],
   "babel": {
     "presets": [
-      "babel-preset-env"
+      "@babel/preset-env"
     ],
-    "plugins": [], 
+    "plugins": [],
     "ignore": []
   },
   "license": "MIT"

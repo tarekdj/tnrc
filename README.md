@@ -11,11 +11,7 @@ npm install tnrc
 ```javascript
 const { tnrc } = require('tnrc');
 
-// Get data ny RC number
-const rc_serach = await tnrc.getDataByRC('REGISTRY NUMBER');
-console.log(rc_serach);
-
-// Get data ny RC number
+// Get data by MF number
 const mf_serach = await tnrc.getDataByMF('MF NUMBER');
 console.log(mf_serach);
 ```
@@ -23,7 +19,7 @@ console.log(mf_serach);
 ## Notes
 This is a work in progress. Following requests are supported:
 
-* Search by RC number.
+* ~~Search by RC number.~~ (Deprecated by th website)
 * Search by MF number.
 
 It relies on [GoogleChrome/puppeteer](https://github.com/GoogleChrome/puppeteer) (Headless Chrome Node API) to retrieve data.
